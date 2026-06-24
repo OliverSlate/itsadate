@@ -16,6 +16,7 @@ function App() {
     });
   }
   function sendDate(date: string) {
+    if (date === "") return;
     fetch("https://ntfy.sh/notifications_from_m", {
       method: "POST", // PUT works too
       body: `Magda wants to meet on ${date}! `,

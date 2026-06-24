@@ -36,7 +36,7 @@ button {
   background-color: var(--button);
   padding: 10px;
   color: var(--primary);
-  
+
 }
 button:hover {
   background-color: var(--button-hover);
@@ -110,4 +110,14 @@ button:active {
   min-height: 500px;
   grid-column: 2;
   box-shadow: 2px 2px 8px 0px rgba(94, 81, 81, 0.15);
+}
+@media only screen and (max-width: 600px) {
+  .controls {
+    display: flex;
+    flex-direction: column;
+  }
+  .vl {
+    min-height: 4px;
+    width: 80%;
+  }
 }
