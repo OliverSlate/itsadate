@@ -8,6 +8,7 @@ function App() {
       "Magda says she misses you.",
       "Magda is hungry!",
       "Magda has a massive stinky poo poo",
+      "Magda is having kinda anger issues",
       "Magda is fed up with lach and her bullshit",
     ];
     fetch("https://ntfy.sh/notifications_from_m", {
@@ -80,6 +81,13 @@ function App() {
             <button
               onClick={() => {
                 sendMessage(4);
+              }}
+            >
+              I'm so fucking angry
+            </button>
+            <button
+              onClick={() => {
+                sendMessage(5);
               }}
             >
               Lach jebana mam kurwa dosc
