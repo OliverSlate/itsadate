@@ -10,6 +10,7 @@ function App() {
       "Magda has a massive stinky poo poo",
       "Magda is having kinda anger issues",
       "Magda is fed up with lach and her bullshit",
+      "Magda says you're gonna be okay",
     ];
     fetch("https://ntfy.sh/notifications_from_m", {
       method: "POST", // PUT works too
@@ -91,6 +92,13 @@ function App() {
               }}
             >
               Lach jebana mam kurwa dosc
+            </button>
+            <button
+              onClick={() => {
+                sendMessage(6);
+              }}
+            >
+              You're gonna be okay
             </button>
           </div>
         </div>
